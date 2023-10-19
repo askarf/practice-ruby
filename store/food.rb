@@ -1,8 +1,9 @@
 require "./item.rb"
-require "./modules.rb"
+require "./overdue.rb"
 
 class Food < Item
-  def initialize
+include OverDue
+  def initialize(input_options)
     super
     @stock_date = (input_options[:stock_date])
     @shelf_life = (input_options[:shelf_life])
