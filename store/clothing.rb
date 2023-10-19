@@ -1,5 +1,4 @@
 require "./item.rb"
-require "./overdue.rb"
 
 class Clothing < Item
   def initialize(input_options)
